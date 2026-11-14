@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+    </div>
+  </div>
+  <div class="panels">
+    <div class="hidden" id="panel1">
+        <video muted loop preload="none" data-src="videos/berge.mp4">
+        </video>
+    </div>
+    <div class="hidden" id="panel2">
+        <video muted loop preload="none" data-src="videos/klarfluss.mp4">
+        </video>
+    </div>
+    <div class="hidden" id="panel3">
+        <video muted loop preload="none" data-src="videos/sonne2.mp4">
+        </video>
+    </div>
+  </div>
+  <div class="hidden" id="particle-container">
+  </div>
+  <div class="angels">
+    <img id="angel1" class="hidden" src="images/angels/angel1.PNG" alt="Image">
+    <img id="angel2" class="hidden" src="images/angels/angel2.PNG" alt="Image">
+    <video id="angel3" class="hidden" muted loop preload="none" data-src="images/angels/dance.webm">
+    </video>
+  </div>
+  <div id="poems">
+    <div class="hidden" id="poem1">
+      <p>Unbunt</p>
+      <p>Hast du Vorbilder?</p>
+      <p>Fangen hier deine Gedanken an, sich zu drehen?</p>
+      <p>Drehst du dich mit Ihnen?</p>
+      <p>Sind die Farben ruhig, schreit die Dunkelheit.</p>
+      <p>Wirst du bis zum Morgengrauen aushalten?</p>
+    </div>
+    <div class="hidden" id="poem2">
+      <div class="textleft">
+        <p>Hell</p>
+        <p>Heller</p>
+        <p>Am hellsten</p>
+        <p>Kannst du dich verstellen?</p>
+        <p>Verstecken...</p>
+        <p>Musst du dich verstecken?</p>
+        <p>Stehst du noch im Dunkeln?</p>
+        <p>Oder wird dein Schatten immer länger?</p>
+      </div>
+      <div class="textright">
+        <p>Schnell</p>
+        <p>Schneller</p>
+        <p>Am schnellsten</p>
+        <p>Wie lange wird es dauern,</p>
+        <p>Bis das Licht durch den ersten Riss scheint?</p>
+        <p>Wirst du es fangen?</p>
+        <p>Doch Lichtgeschwindigkeit entrinnt deinen Händen.</p>
+        <p>Bis du im Morgengrauen erstrahlst.</p>
+      </div>
+    </div>
+    <div class="hidden" id="poem3">
+      <h3>Sonnenstrahlengelb</h3>
+      <p>Flutet die Welt</p>
+    </div>
+    <div class="hidden" id="poem4">
+      <h3>Die Blaue Stunde</h3>
+      <p>...</p>
+    </div>
+    <div class="hidden" id="poem5">
+      <p>Lichtes Gelb</p>
+      <p>Wird abgelichtet</p>
+      <p>Ausgeblichen</p>
+      <p>Hinreißend hingerissen</p>
+      <p>Aussagekräftig</p>
+      <p>Denn so ist Gelb nunmal</p>
+      <p>Es scheint nicht bloß auf uns herab</p>
+      <p>Es lebt in unseren Körpern</p>
+      <p>Es spricht zu uns</p>
+      <p>Aus uns</p>
+    </div>
+    <div class="hidden" id="poem6">
+      <p>Sei doch mal bunt!</p>
+      <p>Siehst du das Himmelblau?</p>
+      <p>Nein?</p>
+      <p>Aber es ist doch genau vor dir.</p>
+      <p>Genau hier.</p>
+      <p>Bring es hervor.</p>
+    </div>
+    <div class="hidden" id="poem7">
+      <div class="textleft">
+        <p>Die Kunst des Schreibens. Oder Denkens.</p>
+        <p>Ich weiß nicht alles nichts</p>
+        <p>ist</p>
+        <p>irgendwie</p>
+        <p>ganz</p>
+        <p>blau- Es verschwindet in der Tiefe der Perspektivee.</p>
+        <p>Aber es geht nie ganz</p>
+        <p>verloren.</p>
+        <p>Erkalten</p>
+        <p>Ergrauen</p>
+        <p>Vergehen</p>
+        <p>Verblauen</p>
+        <p>Dahingerafft...</p>
+        <p>In den Hintergrund gerückt.</p>
+        <p>In einer bewusssten Entscheidung.</p>
+        <p>Wirst du selbst in deinen dunkelsten Tönen</p>
+        <p>verbleiben. Dein Abbild wird unter dem gleißenden Licht</p>
+        <p>verweilen.</p>
+      </div>
+      <div class="textright">
+        <p>Nicht denken!</p>
+        <br>
+        <p>Kannst du dir denken,</p>
+        <p>Was ich gedacht habe?</p>
+        <p>Als ich noch dachte</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Doch ich werde nie vergessen-</p>
+        <p>Solange ich denken kann-</p>
+        <p>Solange ich dich sehen kann-</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Selbst deine hellsten Schatten werfen</p>
+        <p>den Schimmer einer Erinnerung</p>
+        <p>auf uns.</p>
+        <p>Verblauung</p>
+      </div>
+    </div>
+    <div class="hidden" id="poem8">
+      <h3>Iridisierende Wolken</h3>
+      <p>residieren</p>
+    </div>
+    <div class="hidden" id="poem9">
+      <p>Wie gleißendes Licht</p>
+      <p>Ein Moment der Unendlichkeit</p>
+      <p>Flüchtige Gefühle</p>
+      <p>Wallen über mich hinweg</p>
+      <p>Wie ein Windhauch</p>
+      <br>
+      <p>Die Sonne in deinen Augen</p>
+      <p>Taucht die See in ein tiefes Purpur</p>
+      <p>Wenn die Sonne untergeht</p>
+      <p>Und in deine Pupillen versinkt</p>
+      <p>In der goldenen Stunde</p>
+    </div>
+    <div class="hidden" id="poem10">
+      <p>Abendrot, doch rot ist tot.</p>
+    </div>
+    <div class="hidden" id="poem11">
+      <p>Abendrot, doch rot ist tot.</p>
+    </div>
+    <div class="hidden" id="poem12">
+      <p>Der Mond ist wunderschön, nicht wahr?</p>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
